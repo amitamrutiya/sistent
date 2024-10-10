@@ -166,6 +166,18 @@ const CustomCatalogCard: React.FC<CatalogCardProps> = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  if (!shouldFlip) {
+    return (
+      <DesignCard shouldFlip={shouldFlip} isDetailed={isDetailed} outerStyles={outerStyles}>
+        <DesignInnerCard shouldFlip={shouldFlip} className="innerCard">
+          <CardFront shouldFlip={shouldFlip} isDetailed={isDetailed}>
+            {children}
+          </CardFront>
+        </DesignInnerCard>
+      </DesignCard>
+    );
+  }
+
   return (
     <DesignCardUrl href={cardLink} target="_blank" rel="noreferrer">
       <DesignCard shouldFlip={shouldFlip} isDetailed={isDetailed} outerStyles={outerStyles}>
