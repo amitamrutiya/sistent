@@ -1,7 +1,8 @@
 import { styled } from '@mui/material';
 import { InputAdornment, OutlinedInput } from '../../base';
 
-export const StyledSearchInput = styled(OutlinedInput)(({ style }) => ({
+export const StyledSearchInput = styled(OutlinedInput)(({ style, theme }) => ({
+  backgroundColor: theme.palette.background.surfaces,
   width: '100%',
   '@media (max-width: 590px)': {
     marginLeft: '0.25rem',
