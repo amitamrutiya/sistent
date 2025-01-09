@@ -17,8 +17,7 @@ import { MuiOutlinedInput } from './components/outlinedinput.modifier';
 import { MuiPagination } from './components/pagination.modifier';
 import { MuiSvgIcon } from './components/svgicon.modifier';
 import { MuiSwitch } from './components/switch.modifier';
-import { MuiTab } from './components/tab.modifier';
-import { MuiTabs } from './components/tabs.modifier';
+import { MuiTab } from './components/tab.modifier.ts';
 
 export const components: Components<Theme> = {
   MuiAppBar,
@@ -36,7 +35,6 @@ export const components: Components<Theme> = {
   MuiPagination,
   MuiSvgIcon,
   MuiTab,
-  MuiTabs,
   MuiSwitch,
   MuiButtonGroup,
   MuiButton,
